@@ -67,9 +67,47 @@ Support for full word & sentence detection
 
 Multilingual support
 
+Usage
+
+1. Prepare Dataset (If training yourself):
+
+Collect images of hand signs (A–Z) and organize them in separate folders.
+
+Preprocess the images and train the model using a CNN (Convolutional Neural Network).
+
+Save the trained model as .h5 file.
 
 
----
+
+2. Run the Tool:
+
+Make sure your webcam is connected.
+
+Execute the Python script:
+
+python sign_language_translation.py
+
+The camera feed will open, and you’ll see the hand sign detection in real time.
+
+Show a hand sign in front of the webcam to see the corresponding alphabet printed on screen.
+
+
+
+3. Model Prediction:
+
+The captured image is preprocessed (resized, grayscale etc.).
+
+The image is fed to the trained model.
+
+The model predicts the letter corresponding to the hand sign.
+
+
+
+4. Result Display:
+
+The detected alphabet will be displayed on the screen with the video feed.
+
+You can continue showing different signs to translate them one by one
 
 Conclusion
 
